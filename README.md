@@ -11,14 +11,14 @@ Get or check a file mime Type
 With **npm**:
 
 ```bash
-npm install file-mimetype
+npm install get-file-mime-type
 ```
 
 ## Usage
 
 ```ts
 // Import the package
-import { getFileMimeType } from 'file-mimetype';
+import { getFileMimeType } from 'get-file-mime-type';
 
 // Get the mime type from a given fileº
 getNodePackagesInstalledVersion(filename);
