@@ -1,0 +1,18 @@
+{
+  "extends": "@tsconfig/node-ts/tsconfig.json",
+  "compilerOptions": {
+    "outDir": "./dist",
+    "rootDir": "./src",
+    "strict": true,
+    "forceConsistentCasingInFileNames": true,
+    "module": "NodeNext",
+    "moduleResolution": "node16",
+    "resolveJsonModule": true,
+    "types": [ "node", "./types" ],
+    "verbatimModuleSyntax": false,
+    "paths": {
+      "@/types": [ "./types" ],
+      "@/package": [ "./src" ]
+    }
+  }
+}

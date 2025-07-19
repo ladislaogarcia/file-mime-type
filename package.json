@@ -1,0 +1,43 @@
+{
+  "name": "file-mime-type",
+  "version": "1.0.0",
+  "description": "Get or check a file mime type",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "build": "tsc -p tsconfig.json -d",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ladislaogarcia/file-mime-type.git"
+  },
+  "keywords": [],
+  "author": {
+    "name": "Ladislao García",
+    "email": "malcomcc@gmail.com",
+    "url": "https://github.com/ladislaogarcia"
+  },
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ladislaogarcia/file-mime-type/issues"
+  },
+  "homepage": "https://github.com/ladislaogarcia/file-mime-type#readme",
+  "devEngines": {
+    "runtime": {
+      "name": "node",
+      "onFail": "error"
+    },
+    "packageManager": {
+      "name": "npm",
+      "onFail": "error"
+    }
+  },
+  "devDependencies": {
+    "@tsconfig/node-ts": "^23.6.1",
+    "@types/node": "^24.0.14",
+    "prettier": "^3.6.2",
+    "standard": "^17.1.2",
+    "typescript": "^5.8.3"
+  }
+}
