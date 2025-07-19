@@ -1,5 +1,5 @@
 {
-  "name": "file-mime-type",
+  "name": "file-mimetype",
   "version": "1.0.0",
   "description": "Get or check a file mime type",
   "main": "index.js",
@@ -10,7 +10,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ladislaogarcia/file-mime-type.git"
+    "url": "git+https://github.com/ladislaogarcia/file-mimetype.git"
   },
   "keywords": [],
   "author": {
@@ -20,9 +20,9 @@
   },
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/ladislaogarcia/file-mime-type/issues"
+    "url": "https://github.com/ladislaogarcia/file-mimetype/issues"
   },
-  "homepage": "https://github.com/ladislaogarcia/file-mime-type#readme",
+  "homepage": "https://github.com/ladislaogarcia/file-mimetype#readme",
   "devEngines": {
     "runtime": {
       "name": "node",
