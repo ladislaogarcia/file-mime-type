@@ -38,20 +38,15 @@ const getFileMimeTypeByFileExtension = (filename: string) => {
   return mimetypes.find(node => node.extensions.includes(ext))?.mimetype;
 }
 
-export const getFileMimeType = (
-  filename?: string,
-): {
-  mime: string;
-  signature: string | boolean;
-  safeCheck: boolean;
-} => {
+export const getFileMimeType = (filename?: string): FileMimeType => {
   if (!filename) {
     throw 'FILENAME IS REQUIRED';
   }
   if (!fileExists(filename)) {
     throw 'FILENAME OF AN EXISTING FILE IS REQUIRED';
   }
-  const mime = getFileMimeTypeByFileExtension(filename) ?? DEFAULT_MIME_TYPE;
+  const mimetype =
+    getFileMimeTypeByFileExtension(filename) ?? DEFAULT_MIME_TYPE;
   let signature: string = SIGNATURE_DEFAULT;
   if (hasMagicNumbers(filename)) {
     const signatureFile = getMagicNumbersFromFile(filename);
@@ -62,7 +57,7 @@ export const getFileMimeType = (
       })?.signature ?? SIGNATURE_DEFAULT;
   }
   return {
-    mime,
+    mimetype,
     signature,
     safeCheck: !!signature,
   };

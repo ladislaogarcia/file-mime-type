@@ -1,5 +1,5 @@
-export interface FileMimeType {
-  extension: string[],
-  mimetype: string,
-  description: string
-}
+type FileMimeType = {
+  mimetype: string;
+  signature: string;
+  safeCheck: boolean;
+};
